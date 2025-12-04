@@ -1,0 +1,25 @@
+/* Mobile */
+@media only screen and (max-width: 739px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        margin: 1rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .reviews .reviews-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
