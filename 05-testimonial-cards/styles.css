@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimonial-card__1, .testimonial-card__2, .testimonial-card__3 {
+    margin: 30px;
+}
+
+.testimonial-card__1 .testimonial {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    position: relative;
+    max-width: 340px;
+}
+
+.testimonial-card__1 .testimonial::before {
+    content: "";
+    position: absolute;
+    border: 15px solid;
+    border-color: black transparent transparent transparent;
+    bottom: -25px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.author-info .author-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.author-pic {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+.testimonial-card__2 {
+    border: 1px solid black;
+    border-radius: 20px;
+    max-width: 353px;
+    padding: 20px;
+}
+
+.testimonial-card__2 .testimonial {
+    margin-bottom: 15px;
+}
+
+.testimonial-card__3 {
+    display: flex;
+    gap: 30px;
+}
+
+.testimonial-card__3 .author-pic {
+    width: 265px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.testimonial-card__3 .testimonial-card-content {
+    width: 450px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.testimonial-card__3 .author-name {
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.testimonial-card__3 .author-role {
+    font-size: 16px;
+    color: #ccc;
+    margin: 10px 0;
+}
+
+.testimonial-slider {
+    max-width: 740px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+}
+
+.testimonial-slider p {
+    margin-bottom: 30px;
+}
+
+.profile-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev::after {
+    content: "<";
+    margin-right: 30px;
+}
+
+.next::after {
+    content: ">";
+    margin-left: 30px;
+}
+
+.testimonial-slider .author-pic {
+    margin: 0 10px;
+}
+
+.testimonial-slider .author-pic:first-of-type, .testimonial-slider .author-pic:last-of-type {
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+}
